@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(135deg, #1d2671, #c33764);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.head{
+  justify-content: center;
+}
+.option{
+  justify-content: center;
+  /* gap: 20vw; */
+  margin: 2vw 3vw;
+}
+h1, h2{
+    color: white;
+    
+}
+.option a{
+  text-decoration: none;
+}
+.op_btn{
+    margin-top: 25px;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.op_btn:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(135deg, #1d2671, #c33764);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: white;
+}
+.main{
+    text-align: center;
+    /* justify-content: center; */
+}
+.g-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.border{
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    /* border: 3px solid black; */
+    /* width: 35vw; */
+    /* height: 50dvh; */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.hori{
+    /* width: 4.5vw; */
+    gap: 15px;
+    display: flex;
+    /* background: rgba(255, 255, 255, 0.2); */
+    margin-bottom: 15px;
+}
+.verti{
+    /* width: 60vh; */
+    display: flex;
+
+}
+.btn{
+    width: 110px;
+    height: 110px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 42px;
+    outline: none;
+    font-weight: 900;
+    background: linear-gradient(145deg, #ff6a88, #ff99ac);
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.25 ease;
+}
+.btn:hover{
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+.x{
+    color: #00f2fe;
+    text-shadow: 0 0 15px #00f2fe;
+    animation: pop 0.3s ease;
+}
+.o{
+    color: #ffcc70;
+    text-shadow: 0 0 15px #ffcc70;
+    animation: pop 0.3s ease;
+}
+@keyframes pop{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.win{
+    background: linear-gradient(145deg, #00ffcc, #00c9ff) !important;
+    box-shadow: 0 0 30px #00ffcc;
+}
+.btn img{
+    /* transition: all 0.3 ease; */
+    cursor: pointer;
+    width: 20dvh;
+    height: 60px;
+}
+.btn img:hover{
+    transform: scale(1.08);
+}
+.result{
+    margin-top: 25px;
+    color: white;
+    font-size: 22px;
+    /* width: 60dvh;
+    height: 20dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#result{
+    color: red;
+}
+.reset{
+    margin-top: 25px;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reset:hover{
+    transform: scale(1.1);
+}
